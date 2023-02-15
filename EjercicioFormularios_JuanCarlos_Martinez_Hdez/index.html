@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <p><label for="nombre">Nombre</label></p>
+        <input type="text" name="nombre" id="nombre" autofocus minlength="3" required/>
+        <br>
+
+        <p><label for="apellidos">Apellidos</label></p>
+        <input type="text" name="apellidos" id="apellidos" minlength="7" required/>
+        <br>
+
+        <p><label for="mail">Correo electronico</label></p>
+        <input type="text" name="mail" id="mail" placeholder="tucorreo@dominio.com" required/>
+        <br>
+
+        <p><label for="fnac">Fecha de nacimiento</label></p>
+        <input type="text" name="fnac" id="fnac" placeholder="dd-mm-aaaa" required/>
+        <br>
+
+        <p><label for="edad">Edad</label></p>
+        <input type="number" name="edad" id="edad" required/>
+        <br>
+
+        <p><label for="direccion">Direccion</label></p>
+        <input type="text" name="direccion" id="direccion" placeholder="tu calle nº piso(opcional)" required/>
+        <br>
+
+        <p><label for="localidad">Localidad</label></p>
+        <input type="text" name="localidad" id="localidad" required/>
+        <br>
+
+        <p><label for="provincias">Provincia</label></p>
+        <input type="text" name="provincias" list="provincias" required>
+        <datalist id="provincias">
+            <option value="Huelva">Huelva</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="Jaén">Jaén</option>
+            <option value="Granada">Granada</option>
+            <option value="Malaga">Malaga</option>
+        </datalist>
+        <br>
+
+        <p><label for="tlf">Telefono</label></p>
+        <input type="text" name="tlf" id="tlf" minlength="9" maxlength="9" required/>
+        <br>
+
+        <p><label for="color">Color favorito</label></p>
+        <input type="text" name="color" id="color" />
+        <br>
+
+        <p><label for="observa">Observaciones</label></p>
+        <textarea name="observa" id="observa" cols="30" rows="5" required></textarea>
+        <br>
+        <p><input type="submit" value="Enviar" id="btnE"></p>
+        <p><input type="reset" value="Limpiar formulario" id="btnR"></p>
+    </form>
+    <div id="errores"></div>
+</body>
+
+</html>
